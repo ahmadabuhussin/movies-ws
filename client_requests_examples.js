@@ -1,6 +1,6 @@
 
 
-var url = 'http://localhost:1234/movies';
+var url = 'https://movies-ws.herokuapp.com:1234/movies';
 
 // CREATE
 let res = await fetch(url + '/create', {

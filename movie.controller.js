@@ -20,6 +20,11 @@ exports.movie_create = function (req, res, next) {
     })
 };
 
+
+exports.movie_test = function (req, res, next) {
+    res.sendStatus(200);
+};
+
 exports.movie_details = function (req, res, next) {
     if (!req.params.id.match(/^[0-9a-fA-F]{24}$/)) {
         // not a valid ObjectId

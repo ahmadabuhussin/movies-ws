@@ -3,6 +3,8 @@ const router = express.Router();
 
 const movie_controller = require('./movie.controller');
 
+router.post('/test', movie_controller.movie_test);
+
 router.post('/create', movie_controller.movie_create);
 
 router.get('/:id', movie_controller.movie_details);
