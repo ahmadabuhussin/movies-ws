@@ -1,6 +1,10 @@
 
-
 var url = 'https://movies-ws.herokuapp.com:1234/movies';
+
+// TEST
+let res = await fetch(url + '/test', {
+    method: 'GET'
+});
 
 // CREATE
 let res = await fetch(url + '/create', {

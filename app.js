@@ -7,8 +7,6 @@ var cors = require('cors')
 const app = express();
 const movie = require('./movie.route.js');
 
-let port = 1234;
-
 // Set up mongoose connection
 const mongoose = require('mongoose');
 //let mongoDB = 'mongodb://localhost:27017/movies';
@@ -41,6 +39,7 @@ app.use(function (err, req, res, next) {
     res.sendStatus(500);
 });
 
+let port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log('Server is up and running on port number ' + port);
 });
